@@ -1,0 +1,49 @@
+.contenedor {
+  border: 5px solid transparent;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-areas:
+    "item1 item2 item2"
+    "item3 item3 item4"
+    "item5 item6 item7";
+}
+
+.item {
+  border: 5px solid transparent;
+}
+
+.item-1 {
+  background-color: greenyellow;
+  grid-area: item1;
+}
+
+.item-2 {
+  background-color: goldenrod;
+  grid-area: item2;
+}
+
+.item-3 {
+  background-color: green;
+  grid-area: item3;
+}
+
+.item-4 {
+  background-color: greenyellow;
+  grid-area: item4;
+}
+
+.item-5 {
+  background-color: greenyellow;
+  grid-area: item5;
+}
+
+.item-6 {
+  background-color: goldenrod;
+  grid-area: item6;
+}
+
+.item-7 {
+  background-color: green;
+  grid-area: item7;
+}

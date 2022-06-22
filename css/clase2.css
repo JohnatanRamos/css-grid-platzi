@@ -1,0 +1,27 @@
+.contenedor {
+  border: 5px solid beige;
+  background-color: pink;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 150px 150px 150px;
+  grid-auto-rows: 150px;
+  height: 600px;
+  /* Alinia los elementos que hay dentro del contenedor horizontalmente*/
+  justify-items: end;
+  /* Alinia los elementos que hay dentro del contenedor verticalmente*/
+  align-items: start;
+  /* Alinea el contenedor padre */
+  /* align-content: end; */
+  /* Es un atajo para no poner justify-content ni align-content */
+  place-content: end;
+  /* place-items: end center; */
+}
+
+.item {
+  border: 5px solid blue;
+  font-size: 4rem;
+}
+
+.item-1 {
+  align-self: center;
+}

@@ -1,0 +1,47 @@
+.contenedor {
+  border: 5px solid beige;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 75px 75px 75px;
+  /* De esta forma no tendriamos que decirle a cada item el grid-row ni el grid-column; */
+  /* Simplemente le ponemos el nombre a de como le pusimos en la siguiente linea en el grid-area */
+  grid-template-areas:
+    "header header header"
+    "side main main"
+    "side main main";
+  place-content: center;
+}
+
+.item {
+  font-size: 4rem;
+}
+
+.item-1 {
+  border: 5px solid pink;
+  background-color: pink;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  /* Tambien podemos simplificar las dos lineas anteriores haciendo... */
+  /* grid-column: 1/4; */
+  /* Tambien lo podemos hacer con grid-area de la siguiente forma */
+  /* Escribimos el nombre de como se llama en el grid-template-areas que creamos */
+  grid-area: header;
+}
+
+.item-2 {
+  border: 5px solid blue;
+  background-color: blue;
+  /* grid-row: 2/4; */
+  /* O tambien podemos hacerlo de la siguiente forma */
+  /* grid-row-start: 2;
+    grid-row-end: 4; */
+  grid-area: side;
+}
+
+.item-3 {
+  border: 5px solid blueviolet;
+  background-color: blueviolet;
+  /* grid-area: 2/2/4/4; */
+  grid-area: main;
+}

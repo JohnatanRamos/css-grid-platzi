@@ -1,0 +1,19 @@
+.contenedor {
+  border: 5px solid beige;
+  background-color: pink;
+  display: grid;
+  grid-template-rows: 100px 200px;
+  /* grid-template-columns: 100px 200px; */
+  /* Los "grid-auto" crean medidas de todos por iguales.
+  /* grid-auto-rows: 200px 100px; */
+  grid-auto-columns: 100px;
+  /* Es algo parecido al "flex direction"*/
+  grid-auto-flow: column;
+  /* Da espaciado entre filas y columnas */
+  gap: 20px 40px;
+}
+
+.item {
+  border: 5px solid blue;
+  font-size: 4rem;
+}
